@@ -42,7 +42,6 @@ const Hero = () => {
           trigger: "#hero",
           start: "top top",
           end: "bottom top",
-          markers: true,
           scrub: true,
         },
       })
@@ -71,6 +70,7 @@ const Hero = () => {
         end: endValue,
         scrub: true,
         pin: true,
+        // markers: true,
       },
     });
     if (videoRef.current) {
@@ -117,7 +117,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="video absolute inset-0">
+      <div className="video absolute inset-0 border">
         <video
           ref={videoRef}
           src="/videos/output.mp4"
